@@ -14,25 +14,25 @@ export default function Navbar() {
           className={({ isActive }) => (isActive ? "text-black" : "")}
           to="/"
         >
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 hover:scale-110 transition-all duration-200">
             <span className="font-bold">00</span>
             <span className="uppercase">Home</span>
           </div>
         </NavLink>
         <NavLink to="/destination">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 hover:scale-110 transition-all duration-200">
             <span className="font-bold">01</span>
             <span className="uppercase">Destination</span>
           </div>
         </NavLink>
         <NavLink to="/crew">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 hover:scale-110 transition-all duration-200">
             <span className="font-bold">02</span>
             <span className="uppercase">Crew</span>
           </div>
         </NavLink>
         <NavLink to="/technology">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 hover:scale-110 transition-all duration-200">
             <span className="font-bold">03</span>
             <span className="uppercase">Technology</span>
           </div>
