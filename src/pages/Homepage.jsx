@@ -6,7 +6,7 @@ export default function Homepage() {
           <p className="text-xl font-bold md:text-2xl">So, you want to travel to</p>
         </div>
         <div>
-          <h1 className="text-8xl md:text-9xl">SPACE</h1>
+          <h1 className="text-7xl md:text-8xl text-center md:text-start">SPACE</h1>
         </div>
         <div>
           <p className="text-lg md:text-justify">
