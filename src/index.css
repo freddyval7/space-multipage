@@ -1,42 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 * {
-  color: #F2F2F2;
-}
-
-body{
-    background-image: cover;
-    background-repeat: no-repeat;
+  color: #f2f2f2;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .homepage {
-    background-image: url('./assets/home/background-home-desktop.jpg');
+  background-image: url("./assets/home/background-home-desktop.jpg");
 }
 
 .destination {
-    background-image: url('./assets/destination/background-destination-desktop.jpg');
+  background-image: url("./assets/destination/background-destination-desktop.jpg");
 }
 
 .crew {
-    background-image: url('./assets/crew/background-crew-desktop.jpg');
+  background-image: url("./assets/crew/background-crew-desktop.jpg");
 }
 
 .technology {
-    background-image: url('./assets/technology/background-technology-desktop.jpg');
+  background-image: url("./assets/technology/background-technology-desktop.jpg");
 }
 
-h1, h2 {
-    font-family: 'Bellefair', serif;
+@media screen and (max-width: 768px) {
+  .homepage {
+    background-image: url("./assets/home/background-home-mobile.jpg");
+  }
+
+  .destination {
+    background-image: url("./assets/destination/background-destination-mobile.jpg");
+  }
+
+  .crew {
+    background-image: url("./assets/crew/background-crew-mobile.jpg");
+  }
+
+  .technology {
+    background-image: url("./assets/technology/background-technology-mobile.jpg");
+  }
+    
+}
+
+h1,
+h2 {
+  font-family: "Bellefair", serif;
 }
 
 p {
-    font-family: 'Barlow', serif;
+  font-family: "Barlow", serif;
 }
 
 span {
-    font-family: 'Barlow Condensed', sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
 }
