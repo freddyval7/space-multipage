@@ -1,6 +1,6 @@
 export default function Homepage() {
   return (
-    <section className="grid md:grid-cols-2 gap-8 container mt-16">
+    <section className="grid md:grid-cols-2 gap-8 container mt-16 h-screen">
       <div className="w-2/3 m-auto space-y-6 text-center md:text-left">
         <div>
           <p className="text-xl font-bold md:text-2xl">So, you want to travel to</p>
