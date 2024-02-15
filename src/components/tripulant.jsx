@@ -17,7 +17,7 @@ export default function TripulantComponent() {
   }
 
   return (
-    <div className="flex-col justify-center space-y-20">
+    <div className="flex-col justify-center space-y-20 md:px-32 px-8 py-4">
       <div className="md:grid md:grid-cols-2 gap-8 flex flex-col-reverse justify-center">
         <div className="flex flex-col-reverse md:flex-col space-y-8">
           <div className="text-2xl md:flex items-center gap-4 hidden">

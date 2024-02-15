@@ -17,7 +17,7 @@ export default function TechnologyComponent() {
   }
 
   return (
-    <div className="flex-col justify-center space-y-20">
+    <div className="flex-col justify-center space-y-20 md:px-32 px-8 py-4">
       <div className="text-2xl items-center gap-4 hidden md:flex">
         <span className="font-bold">03</span>
         <span className="uppercase tracking-widest">Space Technology</span>
