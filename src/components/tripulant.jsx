@@ -1,6 +1,7 @@
 import { useState } from "react";
 import data from "../data.json";
 import { useSearchParams } from "react-router-dom";
+import { getImageURL } from "../util/image-util";
 
 export default function TripulantComponent() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -67,7 +68,10 @@ export default function TripulantComponent() {
           </div>
         </div>
         <div className="border-b md:border-0 mb-8 md:mb-0">
-          <img src={actualTripulant.images.png} alt="tripulantImg" />
+          <img
+            src={getImageURL("crew", actualTripulant.images.png)}
+            alt="tripulantImg"
+          />
         </div>
       </div>
     </div>

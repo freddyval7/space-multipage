@@ -1,6 +1,7 @@
 import { useState } from "react";
 import data from "../data.json";
 import { useSearchParams } from "react-router-dom";
+import { getImageURL } from "../util/image-util";
 
 export default function TechnologyComponent() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -62,7 +63,7 @@ export default function TechnologyComponent() {
             </div>
           </div>
         <div>
-          <img className="rounded-md mx-auto" src={actualTechnology.images.portrait} alt="technologyImg" />
+          <img className="rounded-md mx-auto" src={getImageURL("technology",actualTechnology.images.portrait)} alt="technologyImg" />
         </div>
       </div>
     </div>

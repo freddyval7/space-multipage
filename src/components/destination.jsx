@@ -1,6 +1,7 @@
 import { useState } from "react";
 import data from "../data.json";
 import { useSearchParams } from "react-router-dom";
+import { getImageURL } from "../util/image-util";
 
 export default function DestinationComponent() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -25,7 +26,7 @@ export default function DestinationComponent() {
       </div>
       <div className="md:grid md:grid-cols-2 flex flex-col gap-8 container justify-center">
         <div>
-          <img src={actualPlanet.images.png} alt="planetImg" />
+          <img src={getImageURL("destination",actualPlanet.images.png)} alt="planetImg" />
         </div>
         <div className="space-y-8">
           <div className="flex items-center gap-4 md:justify-start justify-center">
